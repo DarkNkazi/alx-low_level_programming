@@ -6,7 +6,7 @@
  *
  * @y: number being added
  *
- * Return: Always results 
+ * Return: Always results
  *
  */
 int add(int x, int y)
