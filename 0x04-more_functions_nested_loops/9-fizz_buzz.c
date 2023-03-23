@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - Print either number or 
+ * main - Print either number or
  * fizz, buzz or fizzBuzz
  *
  * Return: returns 0
  */
 int main(void)
 {
-	int num;
-	while (num++ < 100)
+	int num = 1;
+
+	while (num <= 100)
 	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 		{
@@ -21,20 +22,18 @@ int main(void)
 		}
 		else if ((num % 5) == 0)
 		{
-			if (num != 100)
-			{
-				printf("Buzz ");
-			}
-			else
-			{
-				printf("Buzz");
-			}
+			printf("Buzz ");
 		}
 		else
 		{
-			printf("%d ", num);
-			printf("\n");
-			return (0)
+			printf("%i", num);
 		}
+		if (num != 100)
+		{
+			putchar(' ');
+		}
+		num++;
 	}
+	putchar('\n');
+	return (0);
 }
