@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	int a = 0;
-	long b = 1;
-	long c = 2;
-	long d = k;
+	int a;
+	unsigned long int b = 1, c = 2, NT, Sum = 0;
 
-	while
+	for (a = 1; a <= 33; ++a)
 	{
-		c += b;
-		if (c % 2 == 0)
-			d += c;
-		b = c - b;
-		++a;
+		if (b < 4000000 && (b % 2) == 0)
+		{
+			Sum = Sum + b;
+		}
+		NT = b + c;
+		b = c;
+		c = NT;
 	}
-	printf("%ld\n", d);
+	printf("%lu\n", Sum);
 	return (0);
 }
