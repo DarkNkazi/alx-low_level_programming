@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Positive_or_negative
