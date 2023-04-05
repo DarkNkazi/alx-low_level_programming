@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - Function that sets the value of a pointer to a char
+ * print_diagsums - Function that prints 2 diagonals of a square Matrix of int
  *
  * @a: 2d Array of characters
  * @size: Matrix number
